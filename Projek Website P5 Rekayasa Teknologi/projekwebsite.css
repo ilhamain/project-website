@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap');
+
+/* Base body styles */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #800000, #4b0000);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Headings */
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 2.8em;
+    margin-bottom: 0.75em;
+    color: gold;
+    text-align: center;
+    text-shadow: 1px 1px 3px #330000;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.05em;
+}
+
+h2:hover {
+    color: #ffd700cc; /* Slightly lighter gold on hover */
+    transform: scale(1.05) translateY(-5px);
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 0 auto 1.8em auto;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+p:hover {
+    color: #ffeb99cc; /* Slightly lighter on hover */
+}
+
+/* Table styles */
+table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table cells */
+table tr td {
+    padding: 12px 0;
+    text-align: center;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+table tr td:hover {
+    background-color: rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 5px transparent;
+}
+
+a:hover, a:focus {
+    background-color: gold;
+    color: maroon;
+    box-shadow: 0 0 15px gold;
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Header styles */
+header {
+    background-color: #660000;
+    padding: 20px 0;
+    text-align: center;
+    color: gold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    border-radius: 0 0 15px 15px;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header:hover {
+    background-color: #7a0000;
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.7);
+}
+
+/* Header image */
+header img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    border: 3px solid gold;
+    box-shadow: 0 0 10px gold;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px gold;
+}
+
+/* Menu container */
+.menu {
+    background-color: #4b0000;
+    height: 100%;
+    padding-top: 30px;
+    box-shadow: inset 0 0 10px #330000;
+    border-radius: 0 15px 15px 0;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu:hover {
+    background-color: #5c0000;
+}
+
+/* Menu table */
+.menu table {
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Menu table cells */
+.menu table tr td {
+    padding: 15px 0;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.menu table tr td:hover {
+    background-color: rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+/* Menu links */
+.menu a {
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu a:hover {
+    color: gold;
+}
+
+/* Content area */
+.content {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    background: rgba(128, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fix for border color */
+border {
+    color: gold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    .menu a {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+    .content {
+        padding: 20px 10px;
+        max-width: 100%;
+    }
+}
